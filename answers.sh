@@ -18,3 +18,5 @@ Creating Table
 	"Points"	INTEGER,
     "Graduation"	TEXT
 )"
+"INSERT INTO graduates (ID, Name, Age, Gender, Points) SELECT * FROM students WHERE Name = "Layal"  "
+"UPDATE graduates SET Graduation="08/09/2018" WHERE Name="Layal"   "
