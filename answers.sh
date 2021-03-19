@@ -20,3 +20,10 @@ Creating Table
 )"
 "INSERT INTO graduates (ID, Name, Age, Gender, Points) SELECT * FROM students WHERE Name = "Layal"  "
 "UPDATE graduates SET Graduation="08/09/2018" WHERE Name="Layal"   "
+
+Joins
+
+"SELECT employees.Name, employees.Company, companies.Date FROM employees INNER JOIN companies ON employees.Company=companies.Name"
+"SELECT employees.Name FROM employees INNER JOIN companies ON employees.Company=companies.Name WHERE companies.Date<2000"
+"SELECT companies.Name FROM employees INNER JOIN companies ON employees.Company=companies.Name WHERE employees.Role='Graphic Designer'"
+
