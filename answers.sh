@@ -27,3 +27,11 @@ Joins
 "SELECT employees.Name FROM employees INNER JOIN companies ON employees.Company=companies.Name WHERE companies.Date<2000"
 "SELECT companies.Name FROM employees INNER JOIN companies ON employees.Company=companies.Name WHERE employees.Role='Graphic Designer'"
 
+Count & Filter
+
+"SELECT Name FROM students WHERE Points=(SELECT max(Points) FROM students)"
+"SELECT avg(Points) FROM students"
+"SELECT count() FROM students WHERE Points = 500"
+"SELECT Name FROM students WHERE Name like '%s%'"
+"SELECT Name FROM students ORDER BY Points DESC"
+
